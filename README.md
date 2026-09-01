@@ -1,35 +1,36 @@
-# Python-Data-Analysis
-This repository contains an end-to-end sales data analysis project using Python (Pandas, Matplotlib, Seaborn) and Power BI. The dataset used is “Sample Sales Data: Denormalize Sales Data (Segmentation, Clustering, Shipping, etc.) by Gus Segura”, which contains retail sales transactions with order, product, customer, and geographical details.
-# 📊 Sales Data Analysis Project
+-# California Housing Price Prediction
 
-This project demonstrates end-to-end **data analysis and visualization** using Python and Power BI on a sample sales dataset.
+## 📌 Problem Statement
+Predict median house prices in California using demographic and geographic features.
+
 ## 📊 Dataset
-The dataset used is:
-- **Sample Sales Data – Denormalize Sales Data (Segmentation, Clustering, Shipping, etc.)**
-- Contains **~2,800 rows** and **25 columns**
-- Key columns:
-  - `ORDERNUMBER`, `ORDERDATE`, `PRODUCTLINE`, `SALES`, `QUANTITYORDERED`, `PRICEEACH`
-  - `CUSTOMERNAME`, `COUNTRY`, `STATE`, `CITY`
-  - `DEALSIZE`, `TERRITORY`
+- Source: California Housing Dataset
+- Rows: ~20,000
+- Features: Income, population, rooms, location, etc.
 
----
+## ⚙️ Project Workflow
+1. Data Cleaning
+2. Exploratory Data Analysis (EDA)
+3. Feature Engineering
+4. Train-test split using Stratified Sampling
+5. Model Training
+6. Evaluation & Optimization
 
-## 🛠️ Tools & Libraries
-- **Python**: `pandas`, `matplotlib`, `seaborn`
-  ## 📈 Analysis & Visualizations
-1. **Data Cleaning**
-   - Handled missing values (`STATE`, `POSTALCODE`, `TERRITORY`)
-   - Converted `ORDERDATE` to datetime
-   - Extracted year and month for time-based analysis
+## 🧠 Models Used
+- Random Forest Regressor
 
-2. **Exploratory Analysis**
-   - Sales by product line
-   - Deal size distribution
-   - Sales trends over time
-   - Pivot table summaries by country/product line
+## 📈 Evaluation Metrics
+- RMSE
+- MAE
 
-3. **Visualizations**
-   - 📊 Bar chart: Sales by product line
-   - 🥧 Pie chart: Deal size distribution
-   - 📈 Line chart: Sales trend by month/year
-   - 📋 Pivot tables: Country vs Product line sales
+## 🛠 Tech Stack
+- Python
+- NumPy, Pandas
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
+
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+jupyter notebook
